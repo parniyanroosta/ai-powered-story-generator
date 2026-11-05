@@ -10,8 +10,8 @@ Act as a practical project coordinator and beginner-friendly delivery guide. Kee
 
 ## Source of truth
 Inspect these files and the repository/GitHub state when accessible:
-1. `PROJECT_DEFINITION.md`
-2. `USER_STORIES_ACCEPTANCE_CRITERIA.md`
+1. `docs/PROJECT_DEFINITION.md`
+2. `docs/USER_STORIES_ACCEPTANCE_CRITERIA.md`
 3. `delivery/ROADMAP.md`
 4. `delivery/CURRENT_STATUS.md`
 5. `delivery/DECISIONS.md`
