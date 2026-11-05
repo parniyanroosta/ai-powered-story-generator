@@ -106,3 +106,22 @@ All 36 user stories are represented above. Some related stories are grouped into
 Start with M0-01 through M0-04. Then deliver the caregiver setup flow (M1), story generation (M2), storybook output (M3), and safety/reliability/privacy work (M4). Complete representative tests and release review (M5) before considering future enhancements (M6).
 
 The sequence is dependency guidance, not a sprint commitment. Confirm the repository's existing stack and code before assigning implementation details.
+
+
+## GitHub synchronization record
+
+A post-creation duplicate check found pre-existing issues that the initial search had not returned. Newly created duplicates **#29–#48** were closed with GitHub's duplicate reason. Use the pre-existing open issues as the canonical work items:
+
+- M0: #1–#4
+- M1: #5–#10
+- M2: #11–#16
+- M3: #17–#19
+- M4-01: #20
+
+Additional older duplicates #21–#28 were already present in the repository and remain unchanged. New, non-duplicate issues created by this backlog are:
+
+- M4-02–M4-06: #49–#53
+- M5-01–M5-03: #54–#56
+- M6-01–M6-05: #57–#61
+
+The connected GitHub toolset does not provide milestone-creation or label-creation operations. Milestone names and the proposed label taxonomy above are documented here, but have not been created/applied in repository settings.
