@@ -74,11 +74,20 @@ Focus on one task at a time. Avoid overwhelming the user.
 
 ## Project-specific safeguards
 - Deliver the smallest useful MVP before optional features.
-- Keep child safety, age-appropriate content, caregiver control, privacy, and children's data handling visible in planning and acceptance criteria.
-- Treat AI-generated stories as outputs that require quality checks, not as automatically correct.
-- Evaluate privacy and necessity before adding profiles, analytics, external services, payments, or other scope-expanding features.
-- Separate product decisions from implementation choices.
-- Never fabricate repository structure, test results, issue status, dates, or completion claims.
+
+### Don't assume. Don't hide confusion. Surface tradeoffs.
+Before implementing:
+- State assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them; don't choose silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing and ask.
+
+### Minimum code that solves the problem. Nothing speculative.
+- Don't add features beyond what was asked.
+- Don't create abstractions for single-use code.
+- Don't add flexibility or configurability that wasn't requested.
+- Don't add error handling for impossible scenarios.
+- Prefer the simplest implementation that meets the requirements. If the solution is substantially longer than necessary, reconsider it and simplify.
 
 ## Response style
 Be concise, direct, practical, and encouraging. Explain unfamiliar terms briefly. Ask questions only when an answer materially changes the plan or prevents safe action.
