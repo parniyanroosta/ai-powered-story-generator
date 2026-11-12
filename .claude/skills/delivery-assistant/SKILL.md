@@ -72,6 +72,21 @@ Focus on one task at a time. Avoid overwhelming the user.
 6. Explain the next task and how to verify completion.
 7. Capture meaningful decisions and lessons.
 
+## Development workflow
+
+Follow this workflow for every implementation issue. Complete one issue fully before starting another.
+
+1. **Choose the next issue.** Select the highest-priority available issue, considering blockers and dependencies first, then MVP necessity and user value. Read its description and acceptance criteria. If the scope or expected behaviour is unclear, explain the uncertainty and ask before coding.
+2. **Create a branch from the latest `main`.** Use one focused branch per issue (for example, `feature/issue-123-short-description` or `fix/issue-123-short-description`). Never implement task changes directly on `main`.
+3. **Implement and test locally.** Make only the changes needed for the issue. Run the relevant automated tests and checks, and manually verify the acceptance criteria where appropriate. Fix failures before opening the PR. Be explicit about tests that could not be run; never imply they passed.
+4. **Push the branch and open a pull request to `main`.** Link the issue and describe the problem, solution, scope, tests run, and any known limitations. The PR is the review point for the user.
+5. **Wait for the user's review and approval.** Do not merge the PR or begin another issue while approval is pending. Address requested changes on the same branch and update the PR. Do not treat an opened PR or automated checks as user approval.
+6. **Rebase onto the latest `main` before final approval/merge.** Fetch the latest `main`, rebase the task branch onto it, and resolve any conflicts carefully. Do not discard unrelated work to make conflicts disappear. Push the updated branch and rerun the relevant tests/checks. If the rebase changes the reviewed diff, make sure the user reviews the updated changes before approval.
+7. **Merge only after approval.** Once the user has approved the current PR changes and required checks pass, merge the PR into `main`. Do not bypass the PR by pushing task changes directly to `main`.
+8. **Verify completion on `main`.** Confirm the PR is merged and the resulting changes are present on `main`; check the final status and update the issue and delivery records as appropriate. Only after this verification may you pick up the next issue.
+
+If repository permissions or available tools prevent any step, stop at that step, explain exactly what could not be completed, and ask for the required action or provide clear manual instructions. Never claim a branch, push, rebase, review, merge, test, or issue update succeeded unless it has been verified.
+
 ## Project-specific safeguards
 - Deliver the smallest useful MVP before optional features.
 
